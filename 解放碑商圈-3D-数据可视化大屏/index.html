@@ -1,0 +1,695 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head><!-- hexo injector head_begin start -->
+    <script type="text/javascript">
+    var targetProtocol = "https:";
+    if (location.protocol != targetProtocol && location.hostname !="localhost" && location.hostname !="127.0.0.1")
+    location.href = targetProtocol +
+      location.href.substring(location.protocol.length);
+    </script>
+<!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo-2.svg">
+  <link rel="icon" type="image/png" href="/img/logo-2.svg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>解放碑商圈 3D 数据可视化大屏 - 董行健的网站</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/iconfont-cloud.css">
+<link rel="stylesheet" href="/css/iconfont-api.css">
+
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Dongxj's space</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://donxj.com">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-notebook"></i>
+                blog
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-addrcard"></i>
+                信息
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://cdn.donxj.com/blog/个人作品/简历.pdf">
+                    <i class="iconfont icon-note"></i>
+                    个人简历
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://cdn.donxj.com/blog/个人作品/董行健作品集.pdf">
+                    <i class="iconfont icon-images"></i>
+                    个人作品集
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://donxj.com/about">
+                    <i class="iconfont icon-exp-fill"></i>
+                    项目案例
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://art.donxj.com">
+                    <i class="iconfont icon-brush"></i>
+                    ART画廊
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://drive.donxj.cn/">
+                <i class="iconfont icon-cloud"></i>
+                云盘
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('https://cdn.donxj.com/blog/解放碑商圈-3D-数据可视化大屏/解放碑-商圈客流洞察屏03.jpg_auto') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2019-07-24 11:34" pubdate>
+        2019年7月24日 中午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      744 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      7
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">解放碑商圈 3D 数据可视化大屏</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：几秒前
+                
+              </p>
+            
+            <div class="markdown-body" id="post-body">
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>开发语言 <code>java</code>、<code>javasrcipt</code>，支持接入<code>高德地图数据库</code><br>使用 <code>Unity3D</code> 进行开发，视觉设计使用 <code>Adobe Photoshop</code> 进行制作</p>
+</blockquote>
+<h2 id="商圈客流洞察大屏"><a href="#商圈客流洞察大屏" class="headerlink" title="商圈客流洞察大屏"></a>商圈客流洞察大屏</h2><p>以3D可视化数据大屏呈现商圈客流洞察，用户通过数据大屏可以直观了解商圈当前客流情况，商圈内客群画像。通过该数据大屏可助力商圈管理者实时了解商圈客流情况，及时应对客流异常。</p>
+<p>以3D可视化呈现解放碑商圈实景图，商圈客流洞察大屏呈现的数据维度如下：</p>
+<ul>
+<li>商圈概况，方便用户了解商圈基本情况；</li>
+<li>商圈客流监测，监测商圈当天实时客流；</li>
+<li>商圈客流热力分布，以热力图呈现商圈内各区域客流密集度；</li>
+<li>商圈客群画像，呈现商圈客群基础画像；消费习惯；媒体偏好；交通偏好</li>
+</ul>
+<p><img src="https://cdn.donxj.com/blog/%E8%A7%A3%E6%94%BE%E7%A2%91%E5%95%86%E5%9C%88-3D-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E5%B1%8F/%E8%A7%A3%E6%94%BE%E7%A2%91-%E5%95%86%E5%9C%88%E5%AE%A2%E6%B5%81%E6%B4%9E%E5%AF%9F%E5%B1%8F03.jpg_auto" srcset="/img/loading.gif" alt="商圈客流洞察大屏"></p>
+<h2 id="商圈关联分析屏"><a href="#商圈关联分析屏" class="headerlink" title="商圈关联分析屏"></a>商圈关联分析屏</h2><p>以可视化数据大屏的形式，对商圈内的各大商业体间进行客群画像洞察，并对目标商业体间的重合客流进行综合分析。使用者通过数据大屏即可快速了解商圈内商业体间客流重合关系，助力商圈管理者找出商业体间客流差异，把握商圈整体经营状态，协同互助，共同提升商圈内商业体经济的繁荣指数。</p>
+<p>商圈关联分析屏呈现的数据维度如下：</p>
+<ul>
+<li>商业体客流监测</li>
+<li>目标商业体客群画像（呈现上一自然月客流画像）</li>
+<li>竞对商业体客群画像（呈现上一自然月客流画像）</li>
+<li>目标与竞对商业体重合客流分析（基于上一自然月客流进行分析呈现）</li>
+</ul>
+<p><img src="https://cdn.donxj.com/blog/%E8%A7%A3%E6%94%BE%E7%A2%91%E5%95%86%E5%9C%88-3D-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E5%B1%8F/%E8%A7%A3%E6%94%BE%E7%A2%91-%E5%95%86%E5%9C%88%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90%E5%B1%8F.jpg_auto" srcset="/img/loading.gif" alt="商圈关联分析屏"></p>
+<h2 id="商圈透视大屏"><a href="#商圈透视大屏" class="headerlink" title="商圈透视大屏"></a>商圈透视大屏</h2><p>以可视化数据大屏的形式，呈现商圈环境、人地关系等数据，助力管理者了解商圈对应的客群来源及商业环境状况。</p>
+<p>商圈透视大屏呈现的数据维度如下：</p>
+<ul>
+<li>商圈概况，方便用户了解商圈基本情况</li>
+<li>人地关系，综合呈现商圈客群的来源地状况</li>
+<li>商圈环境，呈现商圈商业环境的POI数量状况</li>
+</ul>
+<p><img src="https://cdn.donxj.com/blog/%E8%A7%A3%E6%94%BE%E7%A2%91%E5%95%86%E5%9C%88-3D-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E5%B1%8F/%E8%A7%A3%E6%94%BE%E7%A2%91-%E5%95%86%E5%9C%88%E9%80%8F%E6%9E%90%E5%B1%8F.jpg_auto" srcset="/img/loading.gif" alt="商圈透析屏"></p>
+<h2 id="楼宇沙盘大屏"><a href="#楼宇沙盘大屏" class="headerlink" title="楼宇沙盘大屏"></a>楼宇沙盘大屏</h2><p>以3D可视化形式，展示解放碑商圈CBD区域商务楼宇入驻企业、步行街各商场的信息，助力商圈管理者及时了解商圈内企业及商场综合情况。</p>
+<p>楼宇沙盘大屏呈现的数据信息如下：</p>
+<ul>
+<li>楼宇3D可视化，方便用户立体了解商圈内上午楼宇及商场的基本情况</li>
+<li>楼宇综合信息展示，方便用户了解上商圈内楼宇综合信息</li>
+<li>商场综合信息展示，综合呈现商圈内商场信息</li>
+</ul>
+<p><img src="https://cdn.donxj.com/blog/%E8%A7%A3%E6%94%BE%E7%A2%91%E5%95%86%E5%9C%88-3D-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E5%B1%8F/%E8%A7%A3%E6%94%BE%E7%A2%91-%E5%95%86%E5%9C%88%E6%A5%BC%E5%AE%87%E6%B2%99%E7%9B%98.jpg_auto" srcset="/img/loading.gif" alt="楼宇沙盘大屏"></p>
+<h2 id="最终版-UI"><a href="#最终版-UI" class="headerlink" title="最终版 UI"></a>最终版 UI</h2><!-- 
+
+	<div class="row">
+    <embed src="https://cdn.donxj.com/blog/解放碑商圈-3D-数据可视化大屏/解放碑-商圈客流洞察屏.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+ -->
+<div id="divPdfView">
+  <iframe src="https://service.donxj.com/pdfjs/?file=https://cdn.donxj.com/blog/解放碑商圈-3D-数据可视化大屏/解放碑-商圈客流洞察屏.pdf" style="height: 40rem;width: 100%;border: 0;"></iframe>
+</div>
+
+<br>
+<p class="note note-primary">录屏演示</p>
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=457485413&bvid=BV1X541157J9&cid=244151435&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E5%A4%A7%E5%B1%8F/">数字化大屏</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">数据可视化</a>
+                    
+                      <a class="hover-with-bg" href="/tags/3D/">3D</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/%E4%B8%8A%E6%B1%BD%E8%8D%A3%E5%A8%81/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">上汽集团荣威门店数字化软件</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/%E4%B8%80%E6%B1%BD%E5%A5%94%E8%85%BE%E4%B8%8A%E6%B5%B7%E8%BD%A6%E5%B1%95/">
+                        <span class="hidden-mobile">一汽奔腾上海车展</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://blog.donxj.com/" target="_blank" rel="nofollow noopener"><span>Powered by</span></a> <i class="iconfont icon-love"></i> <a href="https://donxj.com/" target="_blank" rel="nofollow noopener"><span>Donxj</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+  
+<script src="/js/linkcard.js"></script>
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    function typing(id, title){
+        var typed = new Typed('#' + id, {
+            strings: [
+              '  ',
+              title + "&nbsp;",
+            ],
+            cursorChar: "_",
+            typeSpeed: 70,
+            loop: false,
+        });
+        typed.stop();
+        $(document).ready(function () {
+            $(".typed-cursor").addClass("h2");
+            typed.start();
+        });
+    }
+    
+        typing("subtitle", "解放碑商圈 3D 数据可视化大屏")
+    
+  </script>
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4ccba3e12f277cee802a86958cf7f09e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+</body>
+</html>
