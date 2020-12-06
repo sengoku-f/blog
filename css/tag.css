@@ -1,0 +1,154 @@
+tag {
+  /* webkit-box-sizing: border-box; */
+  box-sizing: border-box;
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+  display: inline-block;
+  height: auto;
+  margin: 0 8px 0 0;
+  padding: 2px 10px;
+  line-height: 20px;
+  white-space: nowrap;
+  background: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  cursor: default;
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.tag-has {
+  color: #fff;
+  border: 0;
+  margin-bottom: 8px;
+}
+
+.tag-has.red {
+  background-color: #FF3B30;
+}
+
+.tag-has.orange {
+  background-color: #FF9500;
+}
+
+.tag-has.yellow {
+  background-color: #FFCC00;
+}
+
+.tag-has.green {
+  background-color: #34C759;
+}
+
+.tag-has.teal {
+  background-color: #5AC8FA;
+}
+
+.tag-has.blue {
+  background-color: #007AFF;
+}
+
+.tag-has.indigo {
+  background-color: #5856D6;
+}
+
+.tag-has.purple {
+  background-color: #AF52DE;
+}
+
+.tag-has.pink {
+  background-color: #FF2D55;
+}
+
+.tag-has.white {
+  color: #000;
+  background-color: #F2F2F7;
+}
+
+.tag-has.black {
+  background-color: #8E8E93;
+}
+
+.tag {
+  color: #0070F3;
+  background: #eef6ff;
+  border-color: #95c2f7;
+  margin-bottom: 8px;
+}
+
+.tag.magenta {
+  color: #eb2f96;
+  background: #fff0f6;
+  border-color: #ffadd2;
+}
+
+.tag.red {
+  color: #f5222d;
+  background: #fff1f0;
+  border-color: #ffa39e;
+}
+
+.tag.volcano {
+  color: #fa541c;
+  background: #fff2e8;
+  border-color: #ffbb96;
+}
+
+.tag.orange {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+.tag.gold {
+  color: #faad14;
+  background: #fffbe6;
+  border-color: #ffe58f;
+}
+
+.tag.lime {
+  color: #a0d911;
+  background: #fcffe6;
+  border-color: #eaff8f;
+}
+
+.tag.green {
+  color: #52c41a;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.tag.cyan {
+  color: #13c2c2;
+  background: #e6fffb;
+  border-color: #87e8de;
+}
+
+.tag.blue {
+  color: #1890ff;
+  background: #e6f7ff;
+  border-color: #91d5ff;
+}
+
+.tag.geekblue {
+  color: #2f54eb;
+  background: #f0f5ff;
+  border-color: #adc6ff;
+}
+
+.tag.purple {
+  color: #722ed1;
+  background: #f9f0ff;
+  border-color: #d3adf7;
+}
+
+.tag.grey {
+  color: #252525;
+  background: #f3f3f3;
+  border-color: #a5a5a5;
+}
