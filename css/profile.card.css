@@ -1,0 +1,123 @@
+.sspai_card_box {
+  margin: 2rem auto;
+  height: fit-content;
+  /* max-width: 330px; */
+  border-radius: 20px;
+  background-image: url(../img/profile.card/profile.card.bg.png);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+  /* border: 1px solid #000; */
+  box-shadow: 0px 12px 20px -10px rgb(0 0 0 / 15%);
+  padding: 12px 22px;
+  padding-right: 120px;
+  position: relative;
+  /* position: absolute;
+  display: inline; */
+  transition: all .3s ease;
+}
+.sspai_card_box:hover {
+  box-shadow: 0px 12px 30px -10px rgb(0 0 0 / 30%);
+}
+
+.sspai_card.title {
+  display: inline-flex;
+}
+
+.sspai_card.logo {
+  height: 32px;
+  width: 32px;
+  max-width: 32px;
+  border-radius: 200px;
+}
+.sspai_card.logo.user {
+  max-width: fit-content;
+  display: none;
+}
+
+.sspai_card.name {
+  height: 32px;
+  line-height: 34px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.sspai_card.flag_item {
+  margin-right: 0.1rem;
+}
+
+.sspai_card.icon {
+  height: 24px;
+  width: auto;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.sspai_card.user_photo {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -ms-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+.sspai_card.user_photo.photo {
+  right: auto;
+  border-radius: 200px;
+}
+.sspai_card.user_photo.icon {
+  height: 16px;
+  width: auto;
+  right: 2%;
+  top: 88%;
+}
+
+.sspai_card.wenzi {
+  margin: 0;
+  color: rgb(90, 90, 90);
+  font-size: 14px;
+}
+.sspai_card.wenzi1 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 576px) {
+  .sspai_card_box {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .sspai_card_box {
+    padding-right: 88px;
+  }
+  .sspai_card.user_photo {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .sspai_card_box {
+    min-width: 240px;
+    padding-right: 22px;
+  }
+  .sspai_card.user_photo {
+    opacity: 0;
+    display: none;
+  }
+  .sspai_card.logo {
+    display: none;
+  }
+  .sspai_card.logo.user {
+    display: block;
+  }
+}
