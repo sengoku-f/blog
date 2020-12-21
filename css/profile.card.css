@@ -124,3 +124,6 @@
   background-color: #313b49;
   background-blend-mode: soft-light;
 }
+[data-user-color-scheme='dark'] .sspai_card_box:hover {
+  box-shadow: 0px 12px 30px -10px rgb(0 0 0 / 50%);
+}
