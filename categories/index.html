@@ -54,7 +54,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"sengoku-f.github.io","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":"4ccba3e12f277cee802a86958cf7f09e","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    var CONFIG = {"hostname":"sengoku-f.github.io","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":"4ccba3e12f277cee802a86958cf7f09e","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -238,7 +238,7 @@
   </div>
 </nav>
 
-    <div class="banner intro-2" id="background" parallax=true
+    <div class="banner" id="banner" parallax=true
          style="background: url('https://cdn.donxj.com/blog/img/default_2.jpg_auto') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
@@ -259,7 +259,7 @@
 
   <main>
     
-      <div class="container nopadding-md">
+      <div class="container nopadding-x-md">
         <div class="py-5" id="board"
           >
           
@@ -284,7 +284,7 @@
     <div class="category row">
       <a
         class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckj2o3hb4000bzsnbhmf4cy6m" role="tab" data-toggle="collapse" href="#collapse-ckj2o3hb4000bzsnbhmf4cy6m"
+        id="heading-ckj421rea000c0lnb2cf5ar8u" role="tab" data-toggle="collapse" href="#collapse-ckj421rea000c0lnb2cf5ar8u"
         aria-expanded="false"
       >
         项目
@@ -297,8 +297,8 @@
       <div class="category-collapse">
         
           
-  <div id="collapse-ckj2o3hb4000bzsnbhmf4cy6m" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckj2o3hb4000bzsnbhmf4cy6m">
+  <div id="collapse-ckj421rea000c0lnb2cf5ar8u" class="collapse in" role="tabpanel"
+       aria-labelledby="heading-ckj421rea000c0lnb2cf5ar8u">
     
     
     
@@ -355,7 +355,7 @@
     <div class="category row">
       <a
         class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckj2o3hay0004zsnbbjiw6ype" role="tab" data-toggle="collapse" href="#collapse-ckj2o3hay0004zsnbbjiw6ype"
+        id="heading-ckj421re300040lnb9oqy2xyo" role="tab" data-toggle="collapse" href="#collapse-ckj421re300040lnb9oqy2xyo"
         aria-expanded="false"
       >
         工具
@@ -368,8 +368,8 @@
       <div class="category-collapse">
         
           
-  <div id="collapse-ckj2o3hay0004zsnbbjiw6ype" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckj2o3hay0004zsnbbjiw6ype">
+  <div id="collapse-ckj421re300040lnb9oqy2xyo" class="collapse in" role="tabpanel"
+       aria-labelledby="heading-ckj421re300040lnb9oqy2xyo">
     
     
     
@@ -469,11 +469,8 @@
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
 
   <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
     NProgress.start()
-    document.addEventListener('DOMContentLoaded', function() {
-      window.NProgress && window.NProgress.inc();
-    })
     window.addEventListener('load', function() {
       NProgress.done();
     })
