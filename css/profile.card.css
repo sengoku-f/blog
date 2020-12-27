@@ -8,6 +8,11 @@
   padding: 12px 22px;
   padding-right: 120px;
   position: relative;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
   overflow: hidden;
   transition: all .3s ease;
 }
