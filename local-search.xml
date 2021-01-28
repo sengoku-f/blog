@@ -145,11 +145,11 @@
   
   
   <entry>
-    <title>Windows 工具合集</title>
-    <link href="/Windows-%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/"/>
-    <url>/Windows-%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</url>
+    <title>🚀 Automator | 自动化程序</title>
+    <link href="/Automator/"/>
+    <url>/Automator/</url>
     
-    <content type="html"><![CDATA[<p><profile data-name="Donxj" data-title="视觉传达设计 | UI 设计师" data-summary="做做设计,写写代码." style="display: contents;"></profile></p><h2 id="Windows-工具合集"><a href="#Windows-工具合集" class="headerlink" title="Windows 工具合集"></a>Windows 工具合集</h2><p>我时常为提供自身的工作效率而写一些自用的小工具，这些工具我都开源在 <a href="https://github.com/sengoku-f">Github</a> 上面，我的 <a href="https://github.com/sengoku-f/Win-Automator">Windows 工具合集</a>，这些自动化的工具将我从繁复的工作中解放出来，极大的提高了我的工作效率。</p><p><a href="https://github.com/sengoku-f/Win-Automator/" class="LinkCard">Win-Automator</a></p><p><img src="https://cdn.donxj.com/blog/Windows-%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/%E4%B8%80%E5%9B%BE%E6%B5%81.png" alt="图片介绍"></p>]]></content>
+    <content type="html"><![CDATA[<p><profile data-name="Donxj" data-title="视觉传达设计 | UI 设计师" data-summary="做做设计,写写代码." style="display: contents;"></profile></p><h2 id="🚀-Win-amp-Mac-的自动化程序！"><a href="#🚀-Win-amp-Mac-的自动化程序！" class="headerlink" title="🚀 Win &amp; Mac 的自动化程序！"></a>🚀 Win &amp; Mac 的自动化程序！</h2><p>我时常为提供自身的工作效率而写一些自用的小工具，这些工具我都开源在 <a href="https://github.com/sengoku-f">Github</a> 上面，我的 <a href="https://github.com/sengoku-f/Win-Automator">Windows 工具合集</a> 和 <a href="https://github.com/sengoku-f/MacOS-Automator">MacOS 工具合集</a>，这些自动化的工具将我从繁复的工作中解放出来，极大的提高了我的工作效率。</p><p><a href="https://github.com/sengoku-f/MacOS-Automator/" class="LinkCard">MacOS-Automator</a><a href="https://github.com/sengoku-f/Win-Automator/" class="LinkCard">Win-Automator</a></p><p><img src="https://cdn.donxj.com/blog/Automator/%E4%B8%80%E5%9B%BE%E6%B5%81.png" alt=""></p>]]></content>
     
     
     <categories>
@@ -166,6 +166,8 @@
       <tag>windows</tag>
       
       <tag>automator</tag>
+      
+      <tag>workflow</tag>
       
       <tag>自动化</tag>
       
